@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Usuario - Bienestar Animal</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <section class="programa">
+      <h1>Bienestar Animal</h1>
+      <h2>Agregar usuario</h2>
+
+      <form id="agregarForm">
+        <p class="pLogin">
+          Para registrar un nuevo usuario vamos a pedirte los siguientes datos:
+        </p>
+
+        <label for="agregarNombre" class="labelNombreApellido"
+          >Nombre y apellido:</label
+        >
+        <input
+          type="text"
+          id="inputNombreApellido"
+          class="inputNombreApellido"
+          name="agregarNombre"
+          placeholder="Nombre y Apellido"
+          required
+        />
+
+        <label for="inputRegistroMail" class="labelRegistroMail">Correo electrónico:</label>
+        <input
+          type="email"
+          class="inputRegistroMail"
+          id="inputRegistroMail"
+          name="email"
+          placeholder="Correo electrónico"
+          required
+        />
+
+        <label for="inputRegistroUsuario" class="labelRegistroUsuario">Nombre de usuario:</label>
+        <input
+          type="text"
+          class="inputRegistroUsuario"
+          id="inputRegistroUsuario"
+          name="nombreUsuario"
+          placeholder="Nombre de usuario"
+          required
+        />
+
+        <label for="inputRegistroPassword" class="labelRegistroPassword">Ingrese su password:</label>
+        <input
+          type="password"
+          class="inputRegistroPassword"
+          id="inputRegistroPassword"
+          name="password"
+          placeholder="Ingrese su password"
+          required
+        />
+
+        <div id="mensajeUsuarioAgregado"></div>
+
+        <button type="button" id="btnAgregarUsuario">Registrar</button>
+
+      </form>
+
+      <!-- BTN VOLVER A MENU PRINCIPAL -->
+      <button type="button" id="btnMenu">Menú principal</button>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="../js/Mascota.js"></script>
+    <script src="../js/Usuario.js"></script>
+    <script src="../js/Veterinaria.js"></script>
+    <script src="../js/registroUsuario.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

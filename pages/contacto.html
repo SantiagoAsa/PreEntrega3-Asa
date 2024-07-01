@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Bienestar Animal</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+
+    <section class="programa">
+      
+      <h1>Bienestar Animal</h1>
+      <h2>Contactate con nosotros</h2>
+
+      <!-- FORMULARIO CONTACTO -->
+      <!-- Nombre -->
+      <form id="formularioContacto">
+        <label for="nombre" class="labelContacto">Nombre completo:</label>
+        <input
+          class="inputContacto"
+          type="text"
+          name="nombre"
+          placeholder="Nombre"
+        />
+
+        <!-- Email -->
+        <label for="email" class="labelEmail">E-mail:</label>
+        <input
+          class="inputEmail"
+          type="email"
+          name="email"
+          placeholder="Email"
+        />
+
+        <!-- Cuerpo mensaje -->
+        <label for="mensaje" class="labelMensaje">Mensaje:</label>
+        <textarea
+          id="mensaje"
+          class="txtMensaje"
+          name="mensaje"
+          placeholder="Mensaje"
+        ></textarea>
+
+        <!-- BOTON ENVIAR FORMULARIO -->
+        <button id="btnEnviarContacto" class="btnEnviarContacto" type="submit">Enviar</button>
+      </form>
+      
+      <!-- BOTON VOLVER A INICIO -->
+      <button id="btnInicio">Volver a inicio</button>
+
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="../js/contacto.js"></script>
+  </body>
+</html>

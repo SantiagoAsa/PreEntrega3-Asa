@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Bienestar Animal</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <section class="programa">
+      <h1>Bienestar Animal</h1>
+      <h2>Login</h2>
+
+      <!-- FORMULARIO LOGIN -->
+      <form action="" id="loginForm">
+
+        <p class="pLogin">
+          Si ya creaste una cuenta, ingresá con tu nombre de usuario y
+          contraseña.
+        </p>
+
+        <!-- Nombre de usuario -->
+        <label for="username" class="labelUsername">Nombre de usuario:</label>
+        <input
+          type="text"
+          class="inputUsername"
+          id="username"
+          placeholder="Nombre de usuario"
+          required
+          autofocus
+        />
+
+        <!-- Password -->
+        <label for="password" class="labelPassword" id="labelPassword"
+          >Password:</label
+        >
+        <input
+          type="password"
+          class="inputPassword"
+          id="password"
+          placeholder="Contraseña"
+          required
+        />
+
+        <!-- Checkbox recuerdame -->
+        <label for="recuerdame" class="labelCheckbox" id="labelCheckbox">Recordarme</label>
+        <input type="checkbox"
+        value="remember-me"
+        id="recuerdame"
+        name="recuerdame">
+
+        <!-- Mensaje alerta -->
+        <div id="usuarioInexistente" class="mensajeError"></div>
+
+        <!-- BOTON LOGIN -->
+        <button id="btnLoginUsuario" class="btnLoginUsuario">Login</button>
+      </form>
+
+      <!-- Link registrarse -->
+      <p class="pReg">
+        Si no tenes una cuenta, podes crearla desde acá:
+        <a href="registro.html">Registro</a>
+      </p>
+
+      <!-- BOTON VOLVER A INICIO -->
+      <button id="btnInicio">Volver a inicio</button>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="../js/Mascota.js"></script>
+    <script src="../js/Usuario.js"></script>
+    <script src="../js/Veterinaria.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

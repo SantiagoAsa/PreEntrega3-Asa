@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Mascota - Bienestar Animal</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <section class="programa">
+      <h1>Bienestar Animal</h1>
+      <h2>Registro Mascota</h2>
+
+      <!-- FORMULARIO REGISTRO MASCOTA -->
+      <form class="mascotaForm" id="mascotaForm">
+        <p class="pLogin">
+          Para registrar una mascota vamos a pedirte los siguientes datos:
+        </p>
+
+        <!-- Nombre del tutor -->
+        <label for="inputNombreTutor" class="labelNombreTutor">Nombre del tutor:</label>
+        <input
+          type="text"
+          class="inputNombreTutor"
+          id="inputNombreTutor"
+          name="nombreTutor"
+          placeholder="Nombre completo del tutor"
+          required
+        />
+        
+
+        <!-- Especie -->
+        <label for="inputEspecie" class="labelEspecie">Especie:</label>
+        <select class="inputEspecie" name="especie[]" id="inputEspecie" required>
+          <option value="canino">Canino</option>
+          <option value="felino">Felino</option>
+        </select>
+
+        <!-- Raza -->
+        <label for="inputRaza" class="labelRaza">Raza:</label>
+        <input
+          type="text"
+          class="inputRaza"
+          id="inputRaza"
+          name="raza"
+          placeholder="Raza de la mascota"
+          required
+        />
+
+        <!-- Sexo -->
+        <label for="inputSexo" class="labelSexo">Sexo:</label>
+        <select class="inputSexo" name="sexo[]" id="inputSexo" required>
+          <option value="macho">Macho</option>
+          <option value="hembra">Hembra</option>
+        </select>
+
+        <!-- Nombre de la mascota -->
+        <label for="inputNombreMascota" class="labelNombreMascota"
+          >Nombre de la mascota:</label
+        >
+        <input
+          type="text"
+          class="inputNombreMascota"
+          id="inputNombreMascota"
+          name="nombre"
+          placeholder="Nombre"
+          required
+        />
+
+        <!-- Edad -->
+        <label for="inputEdad" class="labelEdad">Edad:</label>
+        <input type="number" class="inputEdad" id="inputEdad" name="edad" required />
+
+        <!-- Peso -->
+        <label for="inputPeso" class="labelPeso"
+          >Peso de la mascota:</label
+        >
+        <input
+          type="number"
+          class="inputPeso"
+          id="inputPeso"
+          name="peso"
+          placeholder="Peso de la mascota"
+          required
+        />
+
+        <!-- BOTON REGISTRAR MASCOTA -->
+        <button type="submit" id="btnSubmitMascota">Registrar mascota</button>
+        
+      </form>
+
+      <!-- BTN VOLVER A MENU PRINCIPAL -->
+      <button id="btnMenu">Menú principal</button>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="../js/Mascota.js"></script>
+    <script src="../js/Usuario.js"></script>
+    <script src="../js/Veterinaria.js"></script>
+    <script src="../js/registroMascota.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

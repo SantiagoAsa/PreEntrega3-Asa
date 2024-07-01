@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - Bienestar Animal</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <section class="programa">
+
+      <h1>Bienestar Animal</h1>
+      <h2>Crear cuenta</h2>
+
+      <!-- FORMULARIO REGISTRO USUARIO -->
+      <form class="registroForm">
+
+        <p class="pLogin">
+          Para crear una nueva cuenta vamos a pedirte los siguientes datos:
+        </p>
+
+        <!-- Nombre y apellido -->
+        <label for="nombreCompleto" class="labelNombreCompleto">Nombre completo:</label>
+        <input
+          type="text"
+          class="inputNombreCompleto"
+          id="inputNombreCompleto"
+          name="nombreCompleto"
+          placeholder="Nombre completo"
+          required
+        />
+
+        <!-- Correo electrónico -->
+        <label for="email" class="labelEmail">Correo electrónico:</label>
+        <input
+          type="email"
+          class="inputMail"
+          id="inputMail"
+          name="email"
+          placeholder="Correo electrónico"
+          required
+        />
+
+        <!-- Nombre de usuario -->
+        <label for="nombreUsuario" class="labelNuevoUsuario">Nombre de usuario:</label>
+        <input
+          type="text"
+          class="inputNuevoUsuario"
+          id="inputNuevoUsuario"
+          name="nombreUsuario"
+          placeholder="Nombre de usuario"
+          required
+        />
+
+        <!-- Password -->
+        <label for="password" class="labelPassword">Ingrese su password:</label>
+        <input
+          type="password"
+          class="inputPassword"
+          id="inputPassword"
+          name="password"
+          placeholder="Ingrese su password"
+          required
+        />
+
+        <!-- Checkbox términos y condiciones -->
+        <label for="aceptarTerminos" class="terminosCheckbox">Acepto los <a id="terminosCondiciones">términos y condiciones</a></label>
+          <input
+            type="checkbox"
+            value="accept"
+            id="aceptarTerminos"
+            name="aceptarTerminos"
+            required
+          />
+        
+        <div id="terminos"></div>
+
+        <!-- BOTON CREAR CUENTA -->
+        <button class="btnRegistroNuevoUsuario" id="btnRegistroNuevoUsuario">Crear cuenta</button>
+      </form>
+
+      <!-- BOTON VOLVER A INICIO -->
+      <button id="btnInicio">Volver a inicio</button>
+
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="../js/Mascota.js"></script>
+    <script src="../js/Usuario.js"></script>
+    <script src="../js/Veterinaria.js"></script>
+    <script src="../js/registro.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
